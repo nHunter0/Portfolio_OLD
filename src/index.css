@@ -7,6 +7,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  background-color: var(--bg-color);
 }
 
 code {
@@ -17,4 +19,5 @@ code {
 /*Global vars*/
 :root {
   --font-family: "Poppins", sans-serif;
+  --bg-color: #363434;
 }

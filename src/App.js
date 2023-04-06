@@ -1,9 +1,16 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { navbar, home, about, contact, footer } from "./components";
+import { Navbar, Home, About, Contact, Footer } from "./components";
 
 function App() {
-  return <div className="app">navbar home about contact footer</div>;
+  return (
+    <div>
+      <Navbar />
+      <Home />
+      <About />
+      <Contact />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
