@@ -1,0 +1,45 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about-text {
+  font-size: 3rem;
+  margin: 0;
+  color: #ffff;
+}
+
+.about-text-me {
+  color: #af5def;
+  font-weight: bold;
+}
+
+.about-text-body {
+  margin-top: 10px;
+  color: #fff;
+  font-weight: lighter;
+}
+
+.about-find-me-section {
+  margin-top: 10px;
+}
+
+.about-find-me-links {
+  margin-top: 0px;
+}
+
+.about-find-me-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  padding: 0px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about-find-me-links a:hover {
+  background-color: #af5def;
+}

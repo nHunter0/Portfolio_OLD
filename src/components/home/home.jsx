@@ -4,16 +4,18 @@ import Type from "../Type";
 
 function Home() {
   return (
-    <div className="home-container">
-      <div className="home-text">
-        <p>
-          Hi,
+    <div id="home">
+      <div className="home-container">
+        <div className="home-text">
           <p>
-            I'M <span className="home-text-name">NATHAN HUNTER</span>
+            Hi,
+            <p>
+              I'M <span className="home-text-name">NATHAN HUNTER</span>
+            </p>
           </p>
-        </p>
-        <div className="home-text-type">
-          <Type />
+          <div className="home-text-type">
+            <Type />
+          </div>
         </div>
       </div>
     </div>
