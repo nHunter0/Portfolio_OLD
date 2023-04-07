@@ -3,9 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 100vh;
-  margin-top: 150px;
   color: #fff;
+  height: auto;
 }
 
 .resume-text {
@@ -21,8 +20,16 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  width: 100%;
-  max-width: 1000px;
+  overflow: hidden;
+  height: 100%;
+  max-height: 100%;
+}
+
+.pdf-viewer a {
+  display: inline-block;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .resume-download-btn {

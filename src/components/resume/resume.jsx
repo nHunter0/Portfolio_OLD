@@ -29,17 +29,17 @@ const Resume = () => {
             </button>
           </div>
         </div>
-        <a href={resumePath}>
-          <div className="pdf-viewer">
-            <Document
-              file={resumePath}
-              aria-hidden="true"
-              renderTextLayer={false}
-            >
-              <Page pageNumber={1} scale={width > 1500 ? 1.5 : 1} />
-            </Document>
-          </div>
-        </a>
+
+        <div className="pdf-viewer">
+          <Document
+            file={resumePath}
+            aria-hidden="true"
+            renderTextLayer={false}
+            height="100%"
+          >
+            <Page pageNumber={1} scale={width > 1500 ? 1.5 : 1} />
+          </Document>
+        </div>
       </div>
     </div>
   );
