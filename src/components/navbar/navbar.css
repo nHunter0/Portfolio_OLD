@@ -37,4 +37,5 @@ li {
 
 .nav-item:hover {
   cursor: pointer;
+  color: #af5def;
 }

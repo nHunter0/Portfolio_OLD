@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./projects.css";
@@ -28,14 +29,43 @@ const Projects = () => {
     },
   ];
 
+  const [colorMap, setColorMap] = useState(new Map());
+
+  const handleLetterHover = (letter) => {
+    const newColorMap = new Map(colorMap);
+    if (newColorMap.has(letter)) {
+      newColorMap.delete(letter);
+    } else {
+      newColorMap.set(letter, true);
+    }
+    setColorMap(newColorMap);
+  };
+
+  const renderLetter = (letter, index) => {
+    const color = colorMap.has(letter) ? "#af5def" : "#fff";
+    return (
+      <span
+        key={index}
+        onMouseEnter={() => handleLetterHover(letter)}
+        onMouseLeave={() => handleLetterHover("")}
+        style={{ color: color }}
+      >
+        {letter}
+      </span>
+    );
+  };
+  const progStr = "PROJECT";
+
   return (
     <div id="projects">
       <div className="projects-container">
         <div className="projects-text">
-          <p>PROJECTS</p>
-          <span className="projects-text-disc">
-            Here are a few recent projects I've work on
-          </span>
+          {progStr
+            .split("")
+            .map((letter, index) => renderLetter(letter, index))}
+          <div className="projects-text-disc">
+            <p>Here are a few recent projects I've work on</p>
+          </div>
         </div>
 
         {projectList.map((project) => (
