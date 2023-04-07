@@ -4,6 +4,12 @@ TODO: Need to add logos to links
 */
 import "./about.css";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 const about = () => {
   return (
@@ -20,7 +26,12 @@ const about = () => {
             DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
             DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
             DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
-            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
+            DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT DUMMY TEXT
           </p>
         </div>
         <div className="about-find-me-section">
@@ -28,9 +39,15 @@ const about = () => {
             <p> FIND ME ON </p>
           </div>
           <div class="about-find-me-links">
-            <a href="https://github.com/">Github</a>
-            <a href="https://www.linkedin.com/in/">LinkedIn</a>
-            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://github.com/">
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+            <a href="https://www.linkedin.com/in/">
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href="https://www.facebook.com/">
+              <FontAwesomeIcon icon={faFacebook} />
+            </a>
           </div>
         </div>
       </div>
