@@ -24,14 +24,17 @@ li {
   margin-left: 20px;
 }
 
-a {
+.nav-item {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
   padding: 10px;
   margin-left: 20px;
-
   font-style: normal;
   font-weight: 700;
   line-height: 48px;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }

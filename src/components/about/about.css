@@ -47,3 +47,34 @@
 .about-find-me-links a:not(:last-child) {
   margin-right: 0px;
 }
+
+/*Laptops*/
+@media (max-width: 1500px) {
+  .about-container {
+    margin-top: 150px;
+    height: auto !important;
+  }
+
+  .about-text {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .about-text-body {
+    font-size: 16px;
+  }
+
+  .about-find-me-section {
+    margin-top: 100px;
+  }
+
+  .about-find-me-links a {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  .about-find-me-links a:hover {
+    color: #af5def;
+  }
+}
