@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
   height: 100vh;
   color: #fff;
 }
@@ -37,7 +38,7 @@
 .about-find-me-links a {
   font-size: 50px;
   font-weight: bold;
-  padding: 10px;
+  padding: 20px;
   color: white;
 }
 

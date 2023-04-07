@@ -4,12 +4,8 @@
   align-items: center;
   flex-wrap: wrap;
   height: 100vh;
+  margin-top: 150px;
   color: #fff;
-}
-
-.resume-container object {
-  width: 100%;
-  height: 600px;
 }
 
 .resume-text {
@@ -20,20 +16,58 @@
 }
 
 .pdf-viewer {
-  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
   max-width: 1000px;
 }
 
 .resume-download-btn {
-  padding: 10px 20px;
+  padding: 20px 40px;
   border: none;
+  margin-top: 0px;
   border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
+  font-size: 24px;
   cursor: pointer;
+  color: #fff;
+  background-color: #af5def;
   transition: background-color 0.3s ease;
 }
 
 .resume-download-btn:hover {
-  background-color: #2e8b57;
+  background-color: #9628ea;
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+@media (max-width: 1500px) {
+  .resume-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto !important;
+    margin-top: 150px !important;
+  }
+
+  .resume-text {
+    font-size: 32px;
+  }
+
+  .pdf-viewer {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .resume-download-btn:hover {
+    background-color: #9628ea;
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+  }
 }
