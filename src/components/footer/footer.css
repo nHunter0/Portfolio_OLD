@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  color: #fff;
+  height: 100px;
+  margin-top: 150px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+}
