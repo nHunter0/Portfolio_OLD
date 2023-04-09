@@ -33,6 +33,7 @@ const Contact = () => {
           type="text"
           id="name"
           name="name"
+          placeholder="Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -42,19 +43,22 @@ const Contact = () => {
           type="email"
           id="email"
           name="email"
+          placeholder="example@email.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
         />
         <label htmlFor="subject">Subject:</label>
-        <input
-          type="text"
+        <textarea
+          type="textarea"
           id="subject"
           name="subject"
+          placeholder="Type somethining here..."
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required
         />
+
         <button type="submit" className="contact-submit-btn">
           Submit
         </button>
