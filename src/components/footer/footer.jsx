@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faTwitter,
+  faFacebook,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
@@ -12,25 +12,25 @@ const footer = () => {
     <footer className="footer">
       <div className="social-icons">
         <a
-          href="https://github.com/your-github-profile"
+          href="https://github.com/nhunter0/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
-          href="https://twitter.com/your-twitter-handle"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faTwitter} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/your-linkedin-profile/"
+          href="https:/www.linkedin.com/in/h-nathan/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FontAwesomeIcon icon={faLinkedin} />
+        </a>
+        <a
+          href="https://facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faFacebook} />
         </a>
       </div>
       <div className="footer-text">
