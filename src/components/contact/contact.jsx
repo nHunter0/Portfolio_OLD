@@ -3,46 +3,52 @@ import emailjs from "emailjs-com";
 import "./contact.css";
 
 const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+  });
   const form = useRef();
-  const sendEmail = (e) => {
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        "service_iuxbb5j",
-        "template_6ngs69n",
-        form.current,
-        "1Hg1Bii3Jc3WOYmsG"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setName("");
-          setEmail("");
-          setSubject("");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
+    if (formData.name && formData.email && formData.subject) {
+      emailjs
+        .sendForm(
+          "service_iuxbb5j",
+          "template_6ngs69n",
+          form.current,
+          "1Hg1Bii3Jc3WOYmsG"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setFormData({ name: "", email: "", subject: "" });
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   return (
     <section id="contact" className="contact-container">
       <h2 className="contact-text">Contact Me</h2>
-      <form ref={form} className="contact-form" onSubmit={sendEmail}>
+      <form ref={form} className="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
           type="text"
           id="name"
           name="name"
           placeholder="Name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={formData.name}
+          onChange={handleChange}
           required
         />
         <label htmlFor="email">Email:</label>
@@ -51,8 +57,8 @@ const Contact = () => {
           id="email"
           name="email"
           placeholder="example@email.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={formData.email}
+          onChange={handleChange}
           required
         />
         <label htmlFor="subject">Subject:</label>
@@ -61,8 +67,8 @@ const Contact = () => {
           id="subject"
           name="subject"
           placeholder="Type somethining here..."
-          value={subject}
-          onChange={(e) => setSubject(e.target.value)}
+          value={formData.subject}
+          onChange={handleChange}
           required
         />
         <div className="contact-submit-btn">
