@@ -21,11 +21,13 @@
 
 .about-text-body {
   font-weight: lighter;
+  font-size: 24px;
   margin-top: 0px;
   margin-left: 250px;
   margin-right: 250px;
   position: static;
 }
+
 
 .about-find-me-section {
   margin-top: 10px;
@@ -50,6 +52,12 @@
   margin-right: 0px;
 }
 
+.about-text-body a{
+  text-decoration: none;
+  font-weight: bold;
+  color:#af5def;
+}
+
 /*Laptops*/
 @media (max-width: 1500px) {
   .about-container {
@@ -63,7 +71,13 @@
   }
 
   .about-text-body {
-    font-size: 16px;
+    font-size: 18px;
+  }
+
+  .about-text-body a{
+  text-decoration: none;
+  font-weight: bold;
+  color:#af5def;
   }
 
   .about-find-me-section {

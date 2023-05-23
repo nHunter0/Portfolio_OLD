@@ -1,4 +1,4 @@
-import resumePath from "./resume-2023_downloadtest.pdf";
+import resumePath from "./resume-2023.pdf";
 import "react-pdf/dist/esm/Page/TextLayer.css";
 import "./resume.css";
 
