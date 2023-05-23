@@ -26,7 +26,7 @@ const about = () => {
           I'm proficient in C++, Python, MySQL, front-end development, including React. Currently, I'm intensifying my skills in JavaScript and React to broaden my technical repertoire.
           I'm always on the lookout for innovative projects and collaborations that challenge me and fuel my growth. I bring a unique mix of technical knowledge, creativity, and a desire to make a difference.
           Ready to shape the future of tech together!
-         If you have an intriguing opportunity or would like to connect, reach out to me here on my <a href="#contact">contact</a> section.
+          If you have an intriguing opportunity or would like to connect, reach out to me here on my <a href="#contact">contact</a> section.
           </p>
         </div>
         <div className="about-find-me-section">
