@@ -87,6 +87,8 @@ textarea:focus {
   }
 
   .contact-form textarea {
+    resize: vertical;
+    overflow: auto;
     height: 200px;
     margin-top: 10px;
     padding: 10px;
