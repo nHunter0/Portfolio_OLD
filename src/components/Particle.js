@@ -13,6 +13,7 @@ function ParticleComponent() {
   }, []);
 
   return (
+    //Particle effect --> Not sure I like it, hmmm
     <Particles
       id="tsparticles"
       init={particlesInit}
