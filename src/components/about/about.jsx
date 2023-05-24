@@ -22,18 +22,25 @@ const about = () => {
         </div>
         <div className="about-text-body">
           <p>
-          Hi there! I'm Nathan, an enthusiastic Computer Science undergraduate at the University of Wollongong. My academic focus lies in data science, web development, and cybersecurity, with a constant curiosity towards new facets of computing.
-          I'm proficient in C++, Python, MySQL, front-end development, including React. Currently, I'm intensifying my skills in JavaScript and React to broaden my technical repertoire.
-          I'm always on the lookout for innovative projects and collaborations that challenge me and fuel my growth. I bring a unique mix of technical knowledge, creativity, and a desire to make a difference.
-          Ready to shape the future of tech together!
-          If you have an intriguing opportunity or would like to connect, reach out to me here on my <a href="#contact">contact</a> section.
+            Hi there! I'm Nathan, an enthusiastic Computer Science undergraduate
+            at the University of Wollongong. My academic focus lies in data
+            science, web development, and cybersecurity, with a constant
+            curiosity towards new facets of computing. I'm proficient in C++,
+            Python, MySQL, front-end development, including React. Currently,
+            I'm intensifying my skills in JavaScript and React to broaden my
+            technical repertoire. I'm always on the lookout for innovative
+            projects and collaborations that challenge me and fuel my growth. I
+            bring a unique mix of technical knowledge, creativity, and a desire
+            to make a difference. Ready to shape the future of tech together! If
+            you have an intriguing opportunity or would like to connect, reach
+            out to me here on my <a href="#contact">contact</a> section.
           </p>
         </div>
         <div className="about-find-me-section">
           <div className="about-text">
             <p> FIND ME ON </p>
           </div>
-          <div class="about-find-me-links">
+          <div className="about-find-me-links">
             <a
               href="https://github.com/nHunter0/"
               target="_blank"

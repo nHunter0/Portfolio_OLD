@@ -11,21 +11,21 @@ const Projects = () => {
       name: "Project 1",
       description: "This is the first project description.",
       image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/example1",
+      githubLink: "https://github.com/nhunter0",
     },
     {
       id: 2,
       name: "Project 2",
       description: "This is the second project description.",
       image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/example2",
+      githubLink: "https://github.com/nhunter0",
     },
     {
       id: 3,
       name: "Project 3",
       description: "This is the third project description.",
       image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/example3",
+      githubLink: "https://github.com/nhunter0",
     },
   ];
 
@@ -65,6 +65,7 @@ const Projects = () => {
             .map((letter, index) => renderLetter(letter, index))}
           <div className="projects-text-disc">
             <p>Here are a few recent projects I've work on</p>
+            <p>*Section still under development*</p>
           </div>
         </div>
 
