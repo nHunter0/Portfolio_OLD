@@ -75,6 +75,8 @@
   border-style: none;
   font-weight: bold;
   margin-top: 40px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .project-button:hover {

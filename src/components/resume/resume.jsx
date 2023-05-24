@@ -11,13 +11,13 @@ const Resume = () => {
         <div className="resume-text">
           <p>RESUME</p>
           <div className="pdf-controls">
-            <button
+            <a
               href={resumePath}
               download="resume.pdf"
               className="resume-download-btn"
             >
               Download
-            </button>
+            </a>
           </div>
         </div>
 
