@@ -3,29 +3,36 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./projects.css";
+import prog1 from "../../images/prog1.jpg";
+import prog2 from "../../images/prog2.jpg";
+import prog3 from "../../images/prog3.jpg";
 
 const Projects = () => {
   const projectList = [
     {
       id: 1,
-      name: "Project 1",
-      description: "This is the first project description.",
-      image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/nhunter0",
+      name: "TFIDF NLP",
+      description:
+        "This TF-IDF calculator processes text from .txt and .pdf files, featuring a drag-and-drop Tkinter GUI.",
+      image: prog1,
+      githubLink:
+        "https://github.com/nHunter0/TF.IDF-Natural-Language-Processor-",
     },
     {
       id: 2,
-      name: "Project 2",
-      description: "This is the second project description.",
-      image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/nhunter0",
+      name: "FileSystem CPP",
+      description:
+        "This repository hosts a simulated file system in C++, leveraging the MD5 algorithm for security.",
+      image: prog2,
+      githubLink: "https://github.com/nHunter0/FileSystem-Cpp",
     },
     {
       id: 3,
-      name: "Project 3",
-      description: "This is the third project description.",
-      image: "https://via.placeholder.com/300x200",
-      githubLink: "https://github.com/nhunter0",
+      name: "Portfolio",
+      description:
+        "This repository showcases my dynamic and interactive portfolio, crafted using the power and flexibility of React.",
+      image: prog3,
+      githubLink: "https://github.com/nHunter0/Portfolio",
     },
   ];
 
@@ -65,7 +72,6 @@ const Projects = () => {
             .map((letter, index) => renderLetter(letter, index))}
           <div className="projects-text-disc">
             <p>Here are a few recent projects I've work on</p>
-            <p>*Section still under development*</p>
           </div>
         </div>
 
