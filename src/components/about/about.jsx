@@ -1,15 +1,12 @@
 /*
 TODO: Need to add logos to links
       Center links with the FIND ME ON heading BRUH (: 
+      DONE!
 */
 import "./about.css";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 const about = () => {
   return (
@@ -54,13 +51,6 @@ const about = () => {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="https://www.facebook.com/login"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faFacebook} />
             </a>
           </div>
         </div>

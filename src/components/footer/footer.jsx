@@ -1,10 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faFacebook,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import "./footer.css";
 
 const footer = () => {
@@ -25,16 +21,9 @@ const footer = () => {
         >
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a
-          href="https://facebook.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faFacebook} />
-        </a>
       </div>
       <div className="footer-text">
-        <p>&copy; 2023 Nathan Hunter</p>
+        <p>&copy; 2024 Nathan Hunter</p>
       </div>
     </footer>
   );

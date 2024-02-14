@@ -1,41 +1,40 @@
 .projects-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column; /* Change to column for mobile devices */
+  align-items: center; /* Center align items for mobile */
   flex-wrap: wrap;
-  margin-top: 350px;
+  margin-top: 100px; /* Adjusted margin-top for better spacing */
   color: #fff;
 }
 
 .projects-text {
-  font-size: 3rem;
+  font-size: 2rem; /* Adjusted for smaller screens */
   text-align: center;
   width: 100%;
-  margin-bottom: 0px;
+  margin-bottom: 20px; /* Adjusted margin-bottom for spacing */
 }
 
 .projects-text-disc {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Smaller font size for descriptions */
   font-weight: light;
   font-style: italic;
   color: #666;
-  margin-top: 0;
+  margin-top: 10px; /* Reduced margin-top */
+  text-align: center; /* Ensure description is centered */
 }
 
 .project-box {
-  margin: 20px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 20px 10px; /* Adjusted margins for better spacing on mobile */
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column; /* Stack elements vertically in each project box */
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 400px;
+  width: 90%; /* Adjust width to fit mobile screens better */
+  max-width: 300px; /* Maximum width to maintain layout on larger screens */
+  height: auto; /* Height auto for flexibility */
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
 }
 
@@ -44,78 +43,49 @@
 }
 
 .project-info {
-  text-align: center;
+  text-align: center; /* Ensure text is centered within the project box */
 }
 
 .project-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: -40px;
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Adjusted margin-bottom for spacing */
 }
 
-.project-name {
-  font-size: 1.5rem;
-  margin: 0;
-  margin-top: 25px;
-  color: #fff;
-}
-
-.project-description {
-  font-size: 1rem;
-  margin-top: 15px;
-  color: #666;
-  line-height: 1.5;
+.project-name,
+.project-description,
+.project-button {
+  font-size: 1rem; /* Adjusted font size for readability on mobile */
 }
 
 .project-button {
-  background-color: #af5def;
-  color: white;
-  padding: 10px;
-  outline: none;
-  border-radius: 5px;
-  border-style: none;
-  font-weight: bold;
-  margin-top: 40px;
-  display: inline-block;
-  text-decoration: none;
+  padding: 10px 15px; /* Adjust padding for easier interaction on mobile */
+  margin-top: 20px; /* More space above the button */
 }
 
-.project-button:hover {
-  background-color: #9628ea;
-  transform: scale(1.1);
-  transition: ease-in-out 0.3s;
-  cursor: pointer;
-}
-
-@media (max-width: 1500px) {
+@media (min-width: 768px) {
   .projects-container {
-    margin-top: 250px;
+    flex-direction: row; /* Row layout for tablets and above */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 350px; /* Original margin-top for larger screens */
+  }
+
+  .project-box {
+    flex-direction: row; /* Side-by-side layout for project details */
+    width: 45%; /* Adjust width for desktop */
+    max-width: 600px; /* Max width to prevent overly wide boxes */
+    height: 400px; /* Fixed height for uniformity */
+    margin: 20px; /* Spacing between project boxes */
   }
 
   .projects-text {
-    font-size: 32px;
+    font-size: 3rem; /* Original font size for project heading */
   }
 
-  .projects-text-disc {
-    font-size: 16px;
-  }
-
-  .project-image {
-    width: 100%;
-    height: auto;
-    margin-bottom: -20px;
-  }
-
-  .project-name {
-    font-size: 18px;
-    margin: 0;
-    color: #fff;
-  }
-
-  .project-description {
-    font-size: 1rem;
-    margin-top: 15px;
-    color: #666;
-    line-height: 1.5;
+  .projects-text-disc,
+  .project-name,
+  .project-description,
+  .project-button {
+    font-size: 1.5rem; /* Original font sizes for larger screens */
   }
 }

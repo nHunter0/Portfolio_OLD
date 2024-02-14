@@ -28,22 +28,24 @@
   position: static;
 }
 
-
 .about-find-me-section {
   margin-top: 10px;
 }
 
 .about-find-me-links {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Aligns items vertically in case you need it */
+  width: 100%; /* Ensures the div takes the full width */
   margin-top: 0px;
 }
 
 .about-find-me-links a {
-  font-size: 50px;
+  font-size: 50px; /* Adjust based on your preference */
   font-weight: bold;
   padding: 20px;
   color: white;
 }
-
 .about-find-me-links a:hover {
   color: #af5def;
 }
@@ -52,10 +54,10 @@
   margin-right: 0px;
 }
 
-.about-text-body a{
+.about-text-body a {
   text-decoration: none;
   font-weight: bold;
-  color:#af5def;
+  color: #af5def;
 }
 
 /*Laptops*/
@@ -74,10 +76,10 @@
     font-size: 18px;
   }
 
-  .about-text-body a{
-  text-decoration: none;
-  font-weight: bold;
-  color:#af5def;
+  .about-text-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #af5def;
   }
 
   .about-find-me-section {
@@ -92,5 +94,63 @@
 
   .about-find-me-links a:hover {
     color: #af5def;
+  }
+}
+
+/* Base styles remain unchanged */
+
+/* Improved Media Query for Tablets */
+@media (max-width: 1024px) {
+  .about-text-body {
+    font-size: 16px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .about-find-me-links a {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
+/* Additional Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .about-container {
+    margin-top: 100px;
+  }
+
+  .about-text {
+    font-size: 1.5rem;
+  }
+
+  .about-text-body {
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .about-find-me-links {
+    display: flex;
+    justify-content: center; /* Center the social links */
+  }
+
+  .about-find-me-links a {
+    font-size: 24px;
+    padding: 8px;
+  }
+}
+
+/* Additional styles for very small devices (less than 480px) */
+@media (max-width: 480px) {
+  .about-text {
+    font-size: 1.2rem;
+  }
+
+  .about-text-body {
+    font-size: 12px;
+  }
+
+  .about-find-me-links a {
+    font-size: 20px;
   }
 }

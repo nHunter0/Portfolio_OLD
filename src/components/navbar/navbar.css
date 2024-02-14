@@ -1,41 +1,82 @@
 nav {
   position: fixed;
+
   top: 0;
-  right: 0;
   width: 100%;
   height: 56px;
   display: flex;
-  justify-content: flex-end;
-  z-index: 1;
-  background-color: var(--bg-color);
+  justify-content: flex-end; /* Aligns the content to the right */
+  align-items: center;
+  padding: 0;
+  z-index: 1000; /* Ensures navbar is on top */
+  background-color: var(
+    --bg-color
+  ); /* Replace --bg-color with your navbar color */
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none; /* Initially hidden on desktop */
+  cursor: pointer;
+  flex-direction: column;
+  z-index: 1010; /* Ensures hamburger is clickable over the menu */
+}
+
+.hamburger div {
+  background-color: white; /* Color of hamburger lines */
+  margin: 5px 0;
+  height: 2px;
+  width: 30px;
+  margin-right: 5px;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Keeps items aligned to the right */
   align-items: center;
   list-style-type: none;
-  padding: 0 20px;
   margin: 0;
-  height: 50px;
+  padding: 0;
 }
 
 li {
-  margin-left: 20px;
+  margin-left: 20px; /* Spacing between menu items */
 }
 
 .nav-item {
   text-decoration: none;
-  color: white;
+  color: white; /* Menu text color */
   font-size: 1.2rem;
   padding: 10px;
-  margin-left: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 48px;
 }
 
 .nav-item:hover {
   cursor: pointer;
-  color: #af5def;
+  color: #af5def; /* Hover color */
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  ul.nav-links {
+    display: none;
+    position: fixed;
+    right: 0; /* Aligns the menu to the right */
+    top: 56px;
+    flex-direction: column;
+    background-color: var(--bg-color); /* Mobile menu background */
+    width: 100%; /* Full width for the dropdown */
+    text-align: right; /* Text aligned to the right */
+    padding-right: 20px; /* Ensures padding on the right for the text */
+  }
+
+  .nav-links.open {
+    display: block; /* Displays the menu */
+  }
+
+  li {
+    margin: 15px 0; /* Adjusted margin for mobile */
+  }
 }

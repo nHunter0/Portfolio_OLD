@@ -6,6 +6,7 @@ import "./projects.css";
 import prog1 from "../../images/prog1.jpg";
 import prog2 from "../../images/prog2.jpg";
 import prog3 from "../../images/prog3.jpg";
+import prog4 from "../../images/prog4.jpg";
 
 const Projects = () => {
   const projectList = [
@@ -33,6 +34,15 @@ const Projects = () => {
         "This repository showcases my dynamic and interactive portfolio, crafted using the power and flexibility of React.",
       image: prog3,
       githubLink: "https://github.com/nHunter0/Portfolio",
+    },
+
+    {
+      id: 4,
+      name: "Resistor Detector ",
+      description:
+        "This repository contains the code necessary to train and utilize a Convolutional Neural Network (CNN) for resistor recognition from images. The trained model classifies 37 different resistor types with high accuracy. It is then used to detect and classify resistors in new, unseen images.",
+      image: prog4,
+      githubLink: "https://github.com/nHunter0/Resistor-Detector-",
     },
   ];
 

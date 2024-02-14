@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 
-const navbar = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToSection = (id) => {
     const navbarHeight = document.getElementById("navbar").clientHeight;
     const element = document.getElementById(id);
@@ -10,11 +12,17 @@ const navbar = () => {
       top: position,
       behavior: "smooth",
     });
+    setIsOpen(false); // Close the menu after clicking an item on mobile
   };
 
   return (
     <nav id="navbar">
-      <ul>
+      <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul className={isOpen ? "nav-links open" : "nav-links"}>
         <li>
           <span className="nav-item" onClick={() => scrollToSection("home")}>
             Home
@@ -48,4 +56,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
