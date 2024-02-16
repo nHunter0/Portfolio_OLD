@@ -1,42 +1,38 @@
 nav {
   position: fixed;
-
   top: 0;
   width: 100%;
   height: 56px;
   display: flex;
-  justify-content: flex-end; /* Aligns the content to the right */
+  justify-content: flex-end; /* Keeps content aligned to the right */
   align-items: center;
-  padding: 0;
+  padding: 10 20px; /* Added padding on both sides */
   z-index: 1000; /* Ensures navbar is on top */
-  background-color: var(
-    --bg-color
-  ); /* Replace --bg-color with your navbar color */
+  background-color: var(--bg-color); /* Use your background color variable */
   font-weight: bold;
 }
 
 .hamburger {
-  display: none; /* Initially hidden on desktop */
+  display: none; /* Hidden on desktop */
   cursor: pointer;
   flex-direction: column;
-  z-index: 1010; /* Ensures hamburger is clickable over the menu */
+  z-index: 1010; /* Ensures it's clickable over the menu */
 }
 
 .hamburger div {
-  background-color: white; /* Color of hamburger lines */
+  background-color: white; /* Hamburger icon color */
   margin: 5px 0;
   height: 2px;
   width: 30px;
-  margin-right: 5px;
 }
 
 ul {
   display: flex;
-  justify-content: flex-end; /* Keeps items aligned to the right */
+  justify-content: flex-end; /* Aligns items to the right */
   align-items: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 20px; /* Adds padding to the right of the list */
 }
 
 li {
@@ -57,26 +53,27 @@ li {
 
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; /* Show hamburger on mobile */
+    display: flex; /* Shows hamburger on mobile */
+    margin-right: 20px; /* Adjusts hamburger position */
   }
 
   ul.nav-links {
     display: none;
     position: fixed;
-    right: 0; /* Aligns the menu to the right */
+    right: 0;
     top: 56px;
     flex-direction: column;
     background-color: var(--bg-color); /* Mobile menu background */
     width: 100%; /* Full width for the dropdown */
-    text-align: right; /* Text aligned to the right */
-    padding-right: 20px; /* Ensures padding on the right for the text */
+    text-align: right; /* Aligns text to the right */
+    padding-right: 20px; /* Adds padding inside the dropdown menu */
   }
 
   .nav-links.open {
-    display: block; /* Displays the menu */
+    display: block; /* Shows the menu */
   }
 
   li {
-    margin: 15px 0; /* Adjusted margin for mobile */
+    margin: 15px 20px; /* Adjusts margin for mobile, adding right padding */
   }
 }
