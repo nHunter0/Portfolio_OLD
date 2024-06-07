@@ -19,55 +19,45 @@ const about = () => {
         </div>
         <div className="about-text-body">
           <p>
-            Hello! I'm Nathan Hunter, a distinguished graduate in Computer
-            Science with a major in Cyber Security from the University of
-            Wollongong, based in Wollongong, NSW, Australia. My academic journey
-            also includes a foundational year in Cell/Cellular and Molecular
-            Biology at the same university and a Certificate in Intermediate
-            Python 3 from Codecademy. My passion for technology is matched by my
-            diverse educational background and a solid track record of practical
-            experience in the tech industry.
+            As a dedicated Software Engineer with a passion for cybersecurity
+            and full-stack development, I thrive on solving complex technical
+            challenges and enhancing user experiences. My diverse background,
+            including a Bachelor of Computer Science with a major in Cyber
+            Security and extensive hands-on experience, equips me with the
+            skills needed to excel in today's fast-paced tech environment. Key
+            Highlights:
           </p>
-
           <p>
-            Currently, I'm applying my skills as a Freelance Application
-            Developer, where I'm developing a secure and user-friendly
-            full-stack mobile application for enhancing patient care. This role
-            capitalizes on my expertise in React Native, allowing for
-            cross-platform compatibility and direct impact in the health sector.
-            Previously, I honed my software engineering skills as an intern at
-            GetData Software Development Company in Sydney, where I focused on
-            software maintenance, bug fixes, and creating virtual testing
-            environments.
+            🔒 𝗖𝘆𝗯𝗲𝗿𝘀𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗘𝘅𝗽𝗲𝗿𝘁𝗶𝘀𝗲: Graduated with distinction, majoring in
+            Cyber Security. Proven experience in developing secure decryption
+            solutions for iOS/Android backups, WeChat, and web browsers,
+            ensuring data integrity and protection.
           </p>
-
           <p>
-            My project portfolio includes leading the frontend development of
-            "Social Stories," a React.js-based application designed to support
-            children with Autism by generating personalized social stories. This
-            project not only secured third place in the UOW ICT trade show but
-            is also transitioning into a startup, showcasing my ability to
-            contribute to meaningful tech solutions with societal impact.
-            Additionally, I've developed a Machine Learning-Based Resistor
-            Identification System using Python, Keras, and TensorFlow,
-            demonstrating my capability in applying advanced technologies to
-            practical applications.
+            💻 𝗙𝘂𝗹𝗹-𝗦𝘁𝗮𝗰𝗸 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁: Proficient in JavaScript (React, React
+            Native), Node.js, Express.js, SQL, and MongoDB. Successfully
+            developed a cross-platform mobile application enhancing personal
+            assistant disability patient care, integrating robust backend
+            services using Firebase.{" "}
           </p>
-
           <p>
-            I'm proficient in multiple programming languages, including Python,
-            JavaScript (React, React Native), C++, and Java, with extensive
-            experience in full-stack web development and machine learning. My
-            technical skills are complemented by a commitment to cybersecurity,
-            virtualization, and agile methodologies, alongside expertise in
-            database management, version control, and system administration.
+            🤖 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴: Created a Machine Learning-Based Resistor
+            Identification System with 90% accuracy using Python, Keras, and
+            TensorFlow. Skilled in implementing data augmentation and
+            preprocessing techniques.
           </p>
-
           <p>
-            Beyond my technical endeavors, I'm actively involved in volunteer
-            work and have a passion for sports, contributing to my community
-            through involvement in local church initiatives and competitive
-            soccer.
+            🔧 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗣𝗿𝗼𝗳𝗶𝗰𝗶𝗲𝗻𝗰𝘆: Expertise in Python, C++, Java, and
+            Delphi, with strong OOP principles. Experienced in Agile & DevOps
+            methodologies, utilizing tools like Jira and Git for efficient
+            project management.
+          </p>
+          <p>
+            I get excited about opportunities that challenge me to leverage my
+            technical skills in Python, JavaScript, C++, and Java for innovative
+            projects, especially those that make a meaningful impact on society
+            or specific communities. I love connecting with new people and
+            exploring potential collaborations.
           </p>
 
           <p>

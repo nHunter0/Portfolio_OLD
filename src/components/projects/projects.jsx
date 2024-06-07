@@ -3,24 +3,37 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import "./projects.css";
+
 import prog1 from "../../images/prog1.jpg";
 import prog2 from "../../images/prog2.jpg";
 import prog3 from "../../images/prog3.jpg";
 import prog4 from "../../images/prog4.jpg";
+import prog5 from "../../images/prog7-text.jpg";
+import prog6 from "../../images/prog6-nhcoin.jpg";
+import prog7 from "../../images/prog5-news.jpg";
 
 const Projects = () => {
   const projectList = [
     {
       id: 1,
-      name: "TFIDF NLP",
+      name: "News Search Engine ",
       description:
-        "This TF-IDF calculator processes text from .txt and .pdf files, featuring a drag-and-drop Tkinter GUI.",
-      image: prog1,
-      githubLink:
-        "https://github.com/nHunter0/TF.IDF-Natural-Language-Processor-",
+        "A simple news search engine that fetches top news articles using NewsAPI, scrapes content with BeautifulSoup, and performs sentiment analysis, ranking results based on TF-IDF relevance.",
+      image: prog7,
+      githubLink: "https://github.com/nHunter0/News-Search-Engine",
     },
+
     {
       id: 2,
+      name: "Text Editor C++ ",
+      description:
+        "NHText is a text editor written in C++ with predictive text technology, improving typing efficiency and accuracy through NLP and machine learning.",
+      image: prog5,
+      githubLink: "https://github.com/nHunter0/TextEditorCpp",
+    },
+
+    {
+      id: 3,
       name: "FileSystem CPP",
       description:
         "This repository hosts a simulated file system in C++, leveraging the MD5 algorithm for security.",
@@ -28,7 +41,25 @@ const Projects = () => {
       githubLink: "https://github.com/nHunter0/FileSystem-Cpp",
     },
     {
-      id: 3,
+      id: 4,
+      name: "Block Chain Clicker Game ",
+      description:
+        "This repository This project is a fun, interactive game that combines the addictive nature of clicker games with the concept of mining cryptocurrency using a simple blockchain.",
+      image: prog6,
+      githubLink: "https://github.com/nHunter0/NHCoinMiningGame/",
+      websitelink: "nhunter0.github.io/NHCoinMiningGame/",
+    },
+
+    {
+      id: 5,
+      name: "Resistor Detector ",
+      description:
+        "This repository contains the code necessary to train and utilize a Convolutional Neural Network (CNN) for resistor recognition from images. The trained model classifies 37 different resistor types with high accuracy. It is then used to detect and classify resistors in new, unseen images.",
+      image: prog4,
+      githubLink: "https://github.com/nHunter0/Resistor-Detector-",
+    },
+    {
+      id: 6,
       name: "Portfolio",
       description:
         "This repository showcases my dynamic and interactive portfolio, crafted using the power and flexibility of React.",
@@ -37,12 +68,13 @@ const Projects = () => {
     },
 
     {
-      id: 4,
-      name: "Resistor Detector ",
+      id: 7,
+      name: "TFIDF NLP",
       description:
-        "This repository contains the code necessary to train and utilize a Convolutional Neural Network (CNN) for resistor recognition from images. The trained model classifies 37 different resistor types with high accuracy. It is then used to detect and classify resistors in new, unseen images.",
-      image: prog4,
-      githubLink: "https://github.com/nHunter0/Resistor-Detector-",
+        "This TF-IDF calculator processes text from .txt and .pdf files, featuring a drag-and-drop Tkinter GUI.",
+      image: prog1,
+      githubLink:
+        "https://github.com/nHunter0/TF.IDF-Natural-Language-Processor-",
     },
   ];
 
