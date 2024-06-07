@@ -1,19 +1,22 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8200ec2c.css",
-    "main.js": "/Portfolio/static/js/main.101061ce.js",
+    "main.js": "/Portfolio/static/js/main.b397fe2b.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/resume-2024.pdf": "/Portfolio/static/media/resume-2024.fee450fc05a8d59b8463.pdf",
+    "static/media/resume-2024.pdf": "/Portfolio/static/media/resume-2024.749a8defe1cff01de1c7.pdf",
+    "static/media/prog5-news.jpg": "/Portfolio/static/media/prog5-news.03940429d78f2ac1f79d.jpg",
+    "static/media/prog7-text.jpg": "/Portfolio/static/media/prog7-text.58394aecbe533c2ba98f.jpg",
+    "static/media/prog6-nhcoin.jpg": "/Portfolio/static/media/prog6-nhcoin.1c408a9e651e9bf3c8fb.jpg",
     "static/media/prog1.jpg": "/Portfolio/static/media/prog1.2b6f96af6c8a74367837.jpg",
     "static/media/prog2.jpg": "/Portfolio/static/media/prog2.c8aa29f5fc5775a231e4.jpg",
     "static/media/prog3.jpg": "/Portfolio/static/media/prog3.26167dca17685674e43d.jpg",
     "index.html": "/Portfolio/index.html",
     "main.8200ec2c.css.map": "/Portfolio/static/css/main.8200ec2c.css.map",
-    "main.101061ce.js.map": "/Portfolio/static/js/main.101061ce.js.map",
+    "main.b397fe2b.js.map": "/Portfolio/static/js/main.b397fe2b.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8200ec2c.css",
-    "static/js/main.101061ce.js"
+    "static/js/main.b397fe2b.js"
   ]
 }
